@@ -1,4 +1,6 @@
 # doodle-search
+## Deploy link
+https://doodle-search-1f2ff.web.app/
 
 ## Search
 Enter the keywords into the searchbar dan click search icon to display web search results based on the keywords
