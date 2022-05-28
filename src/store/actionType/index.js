@@ -1,0 +1,7 @@
+export const SET_SEARCH = 'setSearch' 
+export const SET_NEWS = 'setNews' 
+export const SET_IMAGES = 'setImages' 
+export const SET_LOADING = 'setLoading' 
+export const SET_ERROR = 'setError' 
+export const SET_BOOKMARK = 'setBookmark'
+export const DELETE_BOOKMARK = 'deleteBookmark'
