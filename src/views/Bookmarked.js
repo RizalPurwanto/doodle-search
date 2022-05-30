@@ -31,6 +31,7 @@ export default function Bookmarked() {
             {bookmarks.length > 0 && bookmarks.map((link, i) => {
                 return (
                     <div className="mx-3 sm:mx-40 my-2 sm:w-1/2 border border-gray-400 px-2 py-2 rounded-lg">
+                        
                         <a href='' onClick={e => deleteBookmark(e, link)}><AiFillDelete title="Delete Bookmark" className='mb-1 float-right'></AiFillDelete></a>
                         <br></br>
                         <LinkPreview url={link}></LinkPreview>

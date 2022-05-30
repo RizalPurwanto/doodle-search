@@ -57,8 +57,8 @@ export default function SearchResult() {
         )
     } else {
         return (
-            <div className="mt-5">
-                <p className="text-left mx-40">About {searches.results?.length} results</p>
+            <div className="mt-5 ">
+                <p className="text-left sm:mx-40 mx-4">About {searches.results?.length} results</p>
 
                 {searches.results?.map((res, i) => {
                     return (

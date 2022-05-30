@@ -19,7 +19,7 @@ function App() {
   const params = useParams()
 
   return (
-    <div className="App">
+    <div className="App flex flex-col  ">
      
      
      <Navbar></Navbar>

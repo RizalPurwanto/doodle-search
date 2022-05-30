@@ -48,9 +48,9 @@ export default function ResultNavbar(props) {
     }
 
     return (
-        <div className="border border-gray-500">
+        <div className="border w-screen border-gray-500">
             {(location.pathname == "/res" || location.pathname == "/img" || location.pathname == "/nws" ) &&
-                <div  className="py-3">
+                <div  className="py-3 w-full">
                     <form onSubmit={submitHandler} className='flex justify-start'>
                         <div  onClick={backToHome} className="mx-2">
 
@@ -63,8 +63,8 @@ export default function ResultNavbar(props) {
                         <input onChange={e => setQuery(e.target.value)} className="border py-1 mx-2 border-5 border-gray-800 rounded-2xl px-2 w-full sm:w-1/3" value={queryStr}  type="search"></input>
                         <button className='mr-2 rounded-xl bg-blue-600 hover:bg-blue-800 px-2 py-1'><BiSearchAlt2 className='text-2xl text-white' /></button>
                     </form>
-                    <nav className=" mt-2 my-2">
-                        <ul className="flex  mx-40 justify-start">
+                    <nav className=" sm:mt-2 my-2">
+                        <ul className="flex  sm:mx-40 justify-start">
                             <li className={`rounded-lg px-2 hover:text-white hover:bg-blue-600 
                focus:text-white focus:bg-blue-600
                mx-3 ${location.pathname == "/res" ? "text-white bg-blue-600" : ""}`}><NavLink to={`/res?q=${query}`}>Search</NavLink></li>

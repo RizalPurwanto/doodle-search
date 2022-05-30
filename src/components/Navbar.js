@@ -9,7 +9,7 @@ export default function Navbar (props)  {
         <div>
             {(location.pathname == "/" || location.pathname == "/images" || location.pathname == "/news" || location.pathname == "/bookmarked") &&  
         
-        <nav className="mt-2 my-2">
+        <nav className="flex px-2 mt-2 my-2">
            <ul className="flex  justify-end">
                <li className={`rounded-lg px-2 hover:text-white hover:bg-blue-600 
                focus:text-white focus:bg-blue-600
