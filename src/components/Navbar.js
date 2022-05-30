@@ -2,7 +2,7 @@ import { NavLink, useSearchParams, useLocation } from "react-router-dom";
 
 export default function Navbar (props)  {
     const location = useLocation()
-    console.log(location.pathname, "INI LOCARION")
+   
     const [searchParams] = useSearchParams()
     const query = searchParams.get("q")
     return (

@@ -24,13 +24,13 @@ export default function NewsResult() {
     const addBookmark = (e, link) => {
         e.preventDefault()
 
-        console.log(e, "Bookmarked", link)
+        // console.log(e, "Bookmarked", link)
         dispatch(addToBookmark(link))
         navigate("/bookmarked")
 
     }
 
-    console.log(news.entries, "INI ENTRIES")
+    //console.log(news.entries, "INI ENTRIES")
     if (loadingState) {
         return (
             <div>
@@ -75,14 +75,7 @@ export default function NewsResult() {
     } else {
         return (
             <div className="mt-5">
-                {/* <ReactTinyLink
-                    cardSize="small"
-                    showGraphic={true}
-                    maxLine={1}
-                    minLine={1}
-                    description="test"
-                    url="https://www.sportskeeda.com/pop-culture/what-time-will-family-guy-season-20-finale-air-fox-details-explored"
-                /> */}
+                
                 {news.entries?.map((entry, i) => {
                     return (
                         <div key={i} className="mx-3 text-right sm:mx-40 my-2 sm:w-1/2 border border-gray-400 px-2 py-2 rounded-lg">

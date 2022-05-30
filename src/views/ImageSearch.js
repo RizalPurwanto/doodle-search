@@ -12,10 +12,10 @@ export default function ImageSearch () {
         const body = {
             query: query.split(" ").join("+")
         }
-        console.log(body, "INI BODY")
+        //console.log(body, "INI BODY")
         if (query == "" ) {
             // setError("query required")
-            console.log("Query needed")
+           // console.log("Query needed")
         } else {
 
            navigate(`/img?q=${body.query}`)
