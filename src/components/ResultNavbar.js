@@ -48,7 +48,7 @@ export default function ResultNavbar(props) {
     }
 
     return (
-        <div className="border w-screen border-gray-500">
+        <div className="border w-auto sm:w-full border-gray-500">
             {(location.pathname == "/res" || location.pathname == "/img" || location.pathname == "/nws" ) &&
                 <div  className="py-3 w-full">
                     <form onSubmit={submitHandler} className='flex justify-start'>
@@ -65,16 +65,16 @@ export default function ResultNavbar(props) {
                     </form>
                     <nav className=" sm:mt-2 my-2">
                         <ul className="flex  sm:mx-40 justify-start">
-                            <li className={`rounded-lg px-2 hover:text-white hover:bg-blue-600 
+                            <li className={`rounded-lg px-1 hover:text-white hover:bg-blue-600 
                focus:text-white focus:bg-blue-600
-               mx-3 ${location.pathname == "/res" ? "text-white bg-blue-600" : ""}`}><NavLink to={`/res?q=${query}`}>Search</NavLink></li>
-                            <li className={`rounded-lg px-2 hover:text-white hover:bg-blue-600 
+               mx-3  ${location.pathname == "/res" ? "text-white bg-blue-600" : ""}`}><NavLink to={`/res?q=${query}`}>Search</NavLink></li>
+                            <li className={`rounded-lg px-1 hover:text-white hover:bg-blue-600 
                focus:text-white focus:bg-blue-600
                mx-3 ${location.pathname == "/img" ? "text-white bg-blue-600" : ""}`}><NavLink to={`/img?q=${query}`}>Images</NavLink></li>
-                            <li className={`rounded-lg px-2 hover:text-white hover:bg-blue-600 
+                            <li className={`rounded-lg px-1 hover:text-white hover:bg-blue-600 
                focus:text-white focus:bg-blue-600
                mx-3 ${location.pathname == "/nws" ? "text-white bg-blue-600" : ""}`}><NavLink to={`/nws?q=${query}`}>News</NavLink></li>
-               <li className={`rounded-lg px-2 hover:text-white hover:bg-blue-600 
+               <li className={`rounded-lg px-1 hover:text-white hover:bg-blue-600 
                focus:text-white focus:bg-blue-600
                mx-3 ${location.pathname == "/bookmarked" ? "text-white bg-blue-600" : ""}`}><NavLink to={`/bookmarked`}>Bookmarks</NavLink></li>
 

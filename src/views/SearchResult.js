@@ -62,7 +62,7 @@ export default function SearchResult() {
 
                 {searches.results?.map((res, i) => {
                     return (
-                        <div key={i} className="mx-4  sm:mx-40 my-8 w-120 sm:w-1/2">
+                        <div key={i} className="mx-4  sm:mx-40 my-8 w-full sm:w-1/2">
                             <p className="text-left text-gray-900 hidden-overflow truncate">{res.link}</p>
                             <p className="text-left text-blue-600 text-3xl"><a href={res.link}>{res.title}</a></p>
                             <p className="text-left text-gray-700" >{res.description}</p>
